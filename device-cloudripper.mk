@@ -58,10 +58,10 @@ PRODUCT_COPY_FILES += \
 # insmod files. Kernel 5.10 prebuilts don't provide these yet, so provide our
 # own copy if they're not in the prebuilts.
 # TODO(b/369686096): drop this when 5.10 is gone.
-ifeq ($(wildcard $(TARGET_KERNEL_DIR)/init.insmod.*.cfg),)
-PRODUCT_COPY_FILES += \
-	device/google/pantah/init.insmod.cloudripper.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.cloudripper.cfg
-endif
+#ifeq ($(wildcard $(TARGET_KERNEL_DIR)/init.insmod.*.cfg),)
+#PRODUCT_COPY_FILES += \
+#	device/google/pantah/init.insmod.cloudripper.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.cloudripper.cfg
+#endif
 
 # Camera
 PRODUCT_COPY_FILES += \
