@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-	device/google/pantah/media_profiles_panther.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+	device/google/pantah/configs/media/media_profiles_panther.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # Media Performance Class 13
 PRODUCT_PROPERTY_OVERRIDES += ro.odm.build.media_performance_class=33
@@ -133,15 +133,15 @@ DEVICE_MANIFEST_FILE += \
 
 # Thermal Config
 PRODUCT_COPY_FILES += \
-	device/google/pantah/thermal_info_config_panther.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
-	device/google/pantah/thermal_info_config_charge_panther.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_charge.json \
-	device/google/pantah/thermal_info_config_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_proto.json
+	device/google/pantah/configs/thermal/thermal_info_config_panther.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+	device/google/pantah/configs/thermal/thermal_info_config_charge_panther.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_charge.json \
+	device/google/pantah/configs/thermal/thermal_info_config_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_proto.json
 
 # Power HAL config
 PRODUCT_COPY_FILES += \
-	device/google/pantah/powerhint-panther.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+	device/google/pantah/configs/power/powerhint-panther.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 PRODUCT_COPY_FILES += \
-	device/google/pantah/powerhint-panther-a0.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint-a0.json
+	device/google/pantah/configs/power/powerhint-panther-a0.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint-a0.json
 
 # Spatial Audio
 PRODUCT_PACKAGES += \

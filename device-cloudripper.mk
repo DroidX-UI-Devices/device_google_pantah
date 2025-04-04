@@ -65,7 +65,7 @@ endif
 
 # Camera
 PRODUCT_COPY_FILES += \
-	device/google/pantah/media_profiles_cloudripper.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+	device/google/pantah/configs/media/media_profiles_cloudripper.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # NFC
 PRODUCT_COPY_FILES += \
@@ -105,12 +105,12 @@ DEVICE_MANIFEST_FILE += \
 
 # Thermal Config
 PRODUCT_COPY_FILES += \
-	device/google/pantah/thermal_info_config_cloudripper.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
-	device/google/pantah/thermal_info_config_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_proto.json
+	device/google/pantah/configs/thermal/thermal_info_config_cloudripper.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
+	device/google/pantah/configs/thermal/thermal_info_config_proto.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_proto.json
 
 # Power HAL config
 PRODUCT_COPY_FILES += \
-	device/google/pantah/powerhint-cloudripper.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+	device/google/pantah/configs/power/powerhint-cloudripper.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Bluetooth HAL
 PRODUCT_COPY_FILES += \
