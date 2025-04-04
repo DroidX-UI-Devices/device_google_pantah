@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-TARGET_LINUX_KERNEL_VERSION := 5.10
+TARGET_LINUX_KERNEL_VERSION := 6.1
 
 $(call inherit-product, device/google/gs201/factory_common.mk)
 $(call inherit-product, device/google/pantah/device-ravenclaw.mk)
