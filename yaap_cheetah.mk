@@ -25,6 +25,11 @@ PRODUCT_NAME := yaap_$(DEVICE_CODENAME)
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
 
+# YAAP Flags
+TARGET_BUILD_GAPPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_ENABLE_BLUR := true
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="cheetah-user 15 BP1A.250305.019 13003188 release-keys" \
     BuildFingerprint=google/cheetah/cheetah:15/BP1A.250305.019/13003188:user/release-keys \
