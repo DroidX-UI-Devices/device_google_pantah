@@ -6,7 +6,7 @@
 
 $(call inherit-product, $(DEVICE_PATH)/device-yaap.mk)
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-yaap
 
 # HBM
 PRODUCT_PACKAGES += \
