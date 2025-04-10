@@ -61,14 +61,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         device/google/pantah/conf/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.panther.rc
 
-# insmod files. Kernel 5.10 prebuilts don't provide these yet, so provide our
-# own copy if they're not in the prebuilts.
-# TODO(b/369686096): drop this when 5.10 is gone.
-#ifeq ($(wildcard $(TARGET_KERNEL_DIR)/init.insmod.*.cfg),)
-#PRODUCT_COPY_FILES += \
-#	device/google/pantah/init.insmod.panther.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.panther.cfg
-#endif
-
 # MIPI Coex Configs
 PRODUCT_COPY_FILES += \
     device/google/pantah/panther/radio/panther_display_primary_mipi_coex_table.csv:$(TARGET_COPY_OUT_VENDOR)/etc/modem/display_primary_mipi_coex_table.csv \
@@ -245,36 +237,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # optimize spatializer effect
 PRODUCT_PROPERTY_OVERRIDES += \
        audio.spatializer.effect.util_clamp_min=300
-
-# Keymaster HAL
-#LOCAL_KEYMASTER_PRODUCT_PACKAGE ?= android.hardware.keymaster@4.1-service
-
-# Gatekeeper HAL
-#LOCAL_GATEKEEPER_PRODUCT_PACKAGE ?= android.hardware.gatekeeper@1.0-service.software
-
-
-# Gatekeeper
-# PRODUCT_PACKAGES += \
-# 	android.hardware.gatekeeper@1.0-service.software
-
-# Keymint replaces Keymaster
-# PRODUCT_PACKAGES += \
-# 	android.hardware.security.keymint-service
-
-# Keymaster
-#PRODUCT_PACKAGES += \
-#	android.hardware.keymaster@4.0-impl \
-#	android.hardware.keymaster@4.0-service
-
-#PRODUCT_PACKAGES += android.hardware.keymaster@4.0-service.remote
-#PRODUCT_PACKAGES += android.hardware.keymaster@4.1-service.remote
-#LOCAL_KEYMASTER_PRODUCT_PACKAGE := android.hardware.keymaster@4.1-service
-#LOCAL_KEYMASTER_PRODUCT_PACKAGE ?= android.hardware.keymaster@4.1-service
-
-# PRODUCT_PROPERTY_OVERRIDES += \
-# 	ro.hardware.keystore_desede=true \
-# 	ro.hardware.keystore=software \
-# 	ro.hardware.gatekeeper=software
 
 # PowerStats HAL
 PRODUCT_SOONG_NAMESPACES += \
