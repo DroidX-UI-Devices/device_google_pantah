@@ -346,7 +346,8 @@ PRODUCT_PACKAGES += \
     SettingsOverlayG03Z5 \
     SettingsOverlayGQML3 \
     SettingsOverlayGVU6C \
-    SettingsOverlayGVU6C_VN
+    SettingsOverlayGVU6C_VN \
+    SettingsOverlayPanther
 
 # eng specific
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
