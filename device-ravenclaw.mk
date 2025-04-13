@@ -42,7 +42,7 @@ include device/google/gs-common/bcmbt/bluetooth.mk
 include device/google/gs-common/touch/lsi/lsi.mk
 
 ifeq ($(filter factory_ravenclaw, $(TARGET_PRODUCT)),)
-include device/google/gs101/uwb/uwb.mk
+include device/google/gs201/uwb/uwb.mk
 include device/google/pantah/uwb/uwb_calibration.mk
 endif
 
