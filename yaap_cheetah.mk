@@ -12,6 +12,8 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 DEVICE_CODENAME := cheetah
 DEVICE_PATH := device/google/pantah
 VENDOR_PATH := vendor/google/cheetah
+
+# Inherit a few makefiles
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 $(call inherit-product, device/google/gs201/yaap_common.mk)
 $(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-yaap.mk)

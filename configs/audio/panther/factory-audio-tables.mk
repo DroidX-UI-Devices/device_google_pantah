@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The Android Open-Source Project
+# Copyright (C) 2020 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_cheetah.mk \
-    $(LOCAL_DIR)/yaap_panther.mk
+AUDIO_FACTORY_TABLE_FOLDER := panther
 
-COMMON_LUNCH_CHOICES := \
-    yaap_panther-user \
-    yaap_cheetah-user
+# Mixer Path Configuration for Audio Factory
+PRODUCT_COPY_FILES += \
+    device/google/pantah/configs/audio/$(AUDIO_FACTORY_TABLE_FOLDER)/config/mixer_paths_factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_factory.xml
+
