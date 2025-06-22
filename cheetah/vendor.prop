@@ -14,3 +14,8 @@ vendor.rild.libpath=libsitril.so
 
 # UWB
 ro.vendor.uwb.calibration.calibrationpaths=/vendor/etc/uwb/calib_paths
+
+# DroidX
+ro.droidx.maintainer=sidharthify
+ro.droidx.chipset=Tensor G2
+ro.droidx.display_resolution=6.7" AMOLED 1400x3120
